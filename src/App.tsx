@@ -9,9 +9,11 @@ import { WorkoutSchedule } from './components/Workout/WorkoutSchedule';
 import { WorkoutCalendar } from './components/Workout/WorkoutCalendar';
 import { Trainers, Memberships } from './components/Sections/Memberships';
 import { FAQ, Contact, TransformationGallery } from './components/Sections/ContactFAQ';
+import { GymGallery } from './components/Sections/GymGallery';
 import { Footer } from './components/Layout/Footer';
 import { Preloader } from './components/Layout/Preloader';
 import { MobileFloaters } from './components/Layout/MobileFloaters';
+
 
 function App() {
   useEffect(() => {
@@ -51,6 +53,8 @@ function App() {
         <WorkoutCalendar />
         <Trainers />
         <TransformationGallery />
+        <GymGallery />
+
         <Memberships />
         <FAQ />
         <Contact />

@@ -37,7 +37,7 @@ export const Hero = () => {
       <div 
         ref={videoOverlayRef}
         className="absolute inset-0 z-0 bg-cover bg-center grayscale opacity-50 md:opacity-60"
-        style={{ backgroundImage: `url('/images/gym/hero-bg.jpg')` }}
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop')` }}
       />
       
       {/* Overlay Gradients - Enhanced for Mobile Contrast */}

@@ -30,6 +30,7 @@ export const Navbar = () => {
     { name: 'Programs', href: '#programs' },
     { name: 'Schedule', href: '#schedule' },
     { name: 'Trainers', href: '#trainers' },
+    { name: 'Facility', href: '#facility' },
     { name: 'Membership', href: '#membership' },
     { name: 'Contact', href: '#contact' },
   ];
