@@ -1,8 +1,12 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { SectionHeader } from '../UI/SectionHeader';
 import { gymData } from '../../data/gymData';
+import { X } from 'lucide-react';
 
 export const GymGallery = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <section id="facility" className="section-padding bg-black relative">
       <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
@@ -26,6 +30,7 @@ export const GymGallery = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: (idx % 4) * 0.1 }}
+                onClick={() => setSelectedImage(photo)}
                 className={`group relative overflow-hidden rounded-xl md:rounded-2xl cursor-pointer ${
                   isLarge ? 'col-span-2 row-span-2' : isTall ? 'row-span-2' : ''
                 }`}
@@ -42,6 +47,44 @@ export const GymGallery = () => {
           })}
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-[1000] bg-black/95 backdrop-blur-xl flex justify-center items-center p-4 cursor-pointer"
+          >
+            <motion.button
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0 }}
+              className="absolute top-6 right-6 p-4 bg-zinc-900 hover:bg-gold-500 hover:text-black rounded-full text-white transition-colors duration-300 z-[1010]"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
+            >
+              <X size={24} />
+            </motion.button>
+            
+            <motion.img
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              src={selectedImage!}
+              alt="Gym Facility Full View"
+              className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.5)] cursor-default"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };
+
