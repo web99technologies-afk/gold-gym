@@ -24,29 +24,19 @@ export const Preloader = () => {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
-            <div className="relative mb-8">
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-                className="w-24 h-24 border-2 border-gold-500/20 border-t-gold-500 rounded-full"
-              />
-              <div className="absolute inset-0 flex items-center justify-center font-heading text-xl font-black text-gold-500 italic">
-                GG
-              </div>
-            </div>
             <div className="flex flex-col items-center">
-              <motion.h1
+              <motion.img 
+                src="/images/logo.png" 
+                alt="Gold Gym Logo" 
                 initial={{ opacity: 0, scale: 0.8, filter: 'blur(10px)' }}
                 animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-                className="text-3xl md:text-5xl font-heading font-black italic tracking-tighter text-white uppercase text-center leading-tight mb-2"
-              >
-                GOLD <span className="text-gold-500">GYM</span>
-              </motion.h1>
+                className="w-32 md:w-48 h-auto object-contain mb-6 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]"
+              />
               
               <motion.div
                 initial={{ width: 0, opacity: 0 }}
-                animate={{ width: "100%", opacity: 1 }}
+                animate={{ width: "100px", opacity: 1 }}
                 transition={{ duration: 1, delay: 0.8, ease: "circOut" }}
                 className="h-[2px] bg-gradient-to-r from-transparent via-gold-500 to-transparent mb-3"
               />
@@ -57,7 +47,7 @@ export const Preloader = () => {
                  transition={{ duration: 0.6, delay: 1.2 }}
                  className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-gold-500/80"
               >
-                 Kumbakonam
+                 Loading
               </motion.p>
             </div>
           </motion.div>

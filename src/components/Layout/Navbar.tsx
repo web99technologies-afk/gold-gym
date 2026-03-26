@@ -46,13 +46,16 @@ export const Navbar = () => {
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a href="#" className="flex flex-col group relative z-[110]">
-            <span className="text-xl md:text-3xl font-heading font-black italic text-white leading-tight tracking-tighter group-hover:text-gold-500 transition-colors">
-              GOLD <span className="text-gold-500 group-hover:text-white transition-colors">GYM</span>
-            </span>
-            <span className="text-[9px] md:text-xs font-heading font-black uppercase tracking-[0.2em] text-gold-500/80 mt-0 leading-none">
-              {gymData.business.location}
-            </span>
+          <a href="#" className="flex items-center gap-2 group relative z-[110]">
+            <img src="/images/logo.png" alt="Gold Gym" className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+            <div className="flex flex-col">
+              <span className="text-xl md:text-2xl font-heading font-black italic text-white leading-none tracking-tighter group-hover:text-gold-500 transition-colors">
+                GOLD GYM
+              </span>
+              <span className="text-[8px] md:text-[10px] font-heading font-black uppercase tracking-[0.2em] text-gold-500 mt-0.5 leading-none">
+                {gymData.business.location}
+              </span>
+            </div>
           </a>
 
           {/* Desktop Links */}
