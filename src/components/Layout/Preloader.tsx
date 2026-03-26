@@ -34,17 +34,32 @@ export const Preloader = () => {
                 GG
               </div>
             </div>
-            
-            <motion.div className="overflow-hidden h-[1.5em] relative">
+            <div className="flex flex-col items-center">
               <motion.h1
-                initial={{ y: '100%' }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-                className="text-4xl md:text-5xl font-heading font-black italic tracking-tighter text-white uppercase text-center"
+                initial={{ opacity: 0, scale: 0.8, filter: 'blur(10px)' }}
+                animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                className="text-3xl md:text-5xl font-heading font-black italic tracking-tighter text-white uppercase text-center leading-tight mb-2"
               >
-                GOLD GYM <span className="text-gold-500">KUMBAKONAM</span>
+                GOLD <span className="text-gold-500">GYM</span>
               </motion.h1>
-            </motion.div>
+              
+              <motion.div
+                initial={{ width: 0, opacity: 0 }}
+                animate={{ width: "100%", opacity: 1 }}
+                transition={{ duration: 1, delay: 0.8, ease: "circOut" }}
+                className="h-[2px] bg-gradient-to-r from-transparent via-gold-500 to-transparent mb-3"
+              />
+
+              <motion.p
+                 initial={{ opacity: 0, y: 10 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 1.2 }}
+                 className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-gold-500/80"
+              >
+                 Kumbakonam
+              </motion.p>
+            </div>
           </motion.div>
         </motion.div>
       )}
