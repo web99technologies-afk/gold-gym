@@ -19,8 +19,8 @@ export const About = () => {
         >
           <div className="absolute -inset-2 md:-inset-4 border-2 border-gold-500/20 rounded-2xl md:rounded-3xl group-hover:border-gold-500/40 transition-all duration-500" />
           <div className="relative overflow-hidden rounded-xl md:rounded-2xl">
-             <img 
-              src="https://images.unsplash.com/photo-1541534741688-6078c64b5913?q=80&w=1200&auto=format&fit=crop" 
+            <img 
+              src="/images/gym/about-bg.jpg" 
               alt="Elite Gym Interior" 
               className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110 grayscale md:group-hover:grayscale-0"
               loading="lazy"

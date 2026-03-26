@@ -75,19 +75,19 @@ export const gymData = {
       name: "Suresh",
       role: "Certified Head Trainer",
       bio: "Certified fitness trainer focused on strength development, disciplined coaching, and transformation-based results.",
-      image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=687&auto=format&fit=crop"
+      image: "/images/gym/trainer-1.jpg"
     },
     {
       name: "Arun",
       role: "Pro Bodybuilder & Coach",
       bio: "Specialist in muscle hypertrophy and contest preparation with 10+ years of experience.",
-      image: "https://images.unsplash.com/photo-1549476464-37392f719918?q=80&w=687&auto=format&fit=crop"
+      image: "/images/gym/trainer-2.jpg"
     },
     {
       name: "Vikram",
       role: "Functional Fitness Expert",
       bio: "Master of HIIT and functional mobility training to help you move better and faster.",
-      image: "https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=687&auto=format&fit=crop"
+      image: "/images/gym/gym-1.jpg"
     }
   ],
   plans: [
@@ -130,10 +130,10 @@ export const gymData = {
     }
   ],
   transformations: [
-    { name: "John Doe", result: "Lost 15kg in 3 Months", image: "https://images.unsplash.com/photo-1583454110551-21f2fa2ec617?q=80&w=600&auto=format&fit=crop" },
-    { name: "Sarah Smith", result: "Built Lean Muscle", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop" },
-    { name: "Mike Ross", result: "Improved Mobility", image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop" },
-    { name: "Emily Blunt", result: "Body Shaping", image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop" }
+    { name: "Transformation 1", result: "Lost 15kg in 3 Months", image: "/images/gym/gym-6.jpg" },
+    { name: "Transformation 2", result: "Built Lean Muscle", image: "/images/gym/gym-7.jpg" },
+    { name: "Transformation 3", result: "Improved Mobility", image: "/images/gym/gym-8.jpg" },
+    { name: "Transformation 4", result: "Body Shaping", image: "/images/gym/gym-5.webp" }
   ],
   faqs: [
     {
