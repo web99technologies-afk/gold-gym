@@ -4,7 +4,8 @@ export const gymData = {
     brand: "Gold Gym",
     location: "Kumbakonam",
     address: "Kumbakonam, Tamil Nadu - 612001",
-    phone: "+91 98765 43210", // Placeholder
+    fullAddress: "123, Luxury Fitness Plaza, Near New Railway Station, Kumbakonam, Tamil Nadu - 612001",
+    phone: "+91 98765 43210",
     email: "info@goldgymkumbakonam.com",
     whatsapp: "919876543210",
     googleMaps: "https://goo.gl/maps/123456789",
@@ -21,9 +22,9 @@ export const gymData = {
   },
   stats: [
     { label: "Members Trained", value: "500+" },
-    { label: "Transformation Programs", value: "50+" },
+    { label: "Transformation Programs", value: "120+" },
     { label: "Certified Trainers", value: "10+" },
-    { label: "Years of Service", value: "8+" },
+    { label: "Years of Legacy", value: "8+" },
   ],
   features: [
     { 
@@ -81,57 +82,75 @@ export const gymData = {
       role: "Pro Bodybuilder & Coach",
       bio: "Specialist in muscle hypertrophy and contest preparation with 10+ years of experience.",
       image: "https://images.unsplash.com/photo-1549476464-37392f719918?q=80&w=687&auto=format&fit=crop"
+    },
+    {
+      name: "Vikram",
+      role: "Functional Fitness Expert",
+      bio: "Master of HIIT and functional mobility training to help you move better and faster.",
+      image: "https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=687&auto=format&fit=crop"
     }
   ],
   plans: [
     {
-      title: "Monthly Plan",
-      price: "1,500", // Monthly price example
+      name: "Monthly Flex",
+      price: "1,500",
+      duration: "/ Month",
       features: [
-        "Full Gym Access",
-        "Free Consultation",
-        "Standard Equipment",
-        "Locker Room Access"
+        "Full Gym Floor Access",
+        "Free Fitness Consultation",
+        "Standard Equipment Access",
+        "Locker Room Usage",
+        "Basic Mobile App Access"
       ]
     },
     {
-      title: "Quarterly Plan",
+      name: "Quarterly Pro",
       price: "4,000",
+      duration: "/ 3 Months",
       recommended: true,
       features: [
-        "Everything in Monthly",
-        "Bio-data tracking",
-        "Nutritional Guidance",
-        "Cardio Sessions"
+        "Everything in Monthly Plan",
+        "Body Bio-data Tracking",
+        "Nutritional Guidance Sheet",
+        "Cardio Equipment Unlimited",
+        "Personal Training Sample (1 Session)"
       ]
     },
     {
-      title: "Personal Training",
+      name: "Elite Coaching",
       price: "Custom",
+      duration: "/ Personalized",
       features: [
-        "dedicated Personal Coach",
-        "Customized Diet Plan",
+        "Dedicated Personal Coach",
+        "Customized Macro Diet Plan",
         "Daily Progress Review",
-        "1:1 Training Sessions"
+        "1:1 Training Sessions",
+        "VIP Treatment & Early Entry"
       ]
     }
   ],
+  transformations: [
+    { name: "John Doe", result: "Lost 15kg in 3 Months", image: "https://images.unsplash.com/photo-1583454110551-21f2fa2ec617?q=80&w=600&auto=format&fit=crop" },
+    { name: "Sarah Smith", result: "Built Lean Muscle", image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop" },
+    { name: "Mike Ross", result: "Improved Mobility", image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop" },
+    { name: "Emily Blunt", result: "Body Shaping", image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop" }
+  ],
   faqs: [
     {
-      question: "Do you have personal training?",
-      answer: "Yes, we offer one-on-one personal training sessions with certified coaches who tailor programs to your specific goals."
+      q: "Do you have personal training?",
+      a: "Yes, we offer one-on-one personal training sessions with certified coaches who tailor programs to your specific goals."
     },
     {
-      question: "What are the gym timings?",
-      answer: "We are open from 05:00 AM to 10:00 AM in the morning and 05:00 PM to 10:00 PM in the evening from Monday to Saturday."
+      q: "What are the gym timings?",
+      a: "We are open from 05:00 AM to 10:00 AM in the morning and 05:00 PM to 10:00 PM in the evening from Monday to Saturday."
     },
     {
-      question: "Are beginner-friendly programs available?",
-      answer: "Absolutely! We have dedicated beginner programs that focus on teaching proper form and building a strong foundation."
+      q: "Are beginner-friendly programs available?",
+      a: "Absolutely! We have dedicated beginner programs that focus on teaching proper form and building a strong foundation."
     },
     {
-      question: "Do you offer weight loss programs?",
-      answer: "Yes, our transformation programs are specifically designed for efficient fat loss and body composition improvement."
+      q: "Do you offer weight loss programs?",
+      a: "Yes, our transformation programs are specifically designed for efficient fat loss and body composition improvement."
     }
   ],
   workoutSchedule: {
