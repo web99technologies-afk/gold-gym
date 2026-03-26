@@ -6,7 +6,7 @@ export const MobileFloaters = () => {
   return (
     <>
       {/* Floating Buttons for Mobile/Desktop */}
-      <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-4">
+      <div className="fixed bottom-28 lg:bottom-6 right-6 z-[100] flex flex-col gap-4">
         {/* WhatsApp Button */}
         <motion.a 
           href={`https://wa.me/${gymData.business.whatsapp}`} 
